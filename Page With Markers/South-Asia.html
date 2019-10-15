@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+		<script type="text/javascript" src="js/KBmapmarkers.js"></script>
+		<script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+
+		<link href="css/KBmapmarkers.css" rel="stylesheet">
+		<link href="css/FestivalsCSS.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Domine:400,700&display=swap" rel="stylesheet">
+
+		<style>
+
+			@font-face {
+			  font-family: 'witcher';
+			  src: url('thewitcher-4.ttf')  format('truetype')
+			}
+
+			.KBmap__markerTitle{
+				font-family: witcher;
+				color: #56270c;
+			}
+
+		</style>
+		<title>South Asian Festivals</title>
+
+		</head>
+		<body>
+		  <div class="dropdown">
+		  <header class="fixed">South Asia</header>
+		  <div class="dropdown-content">
+		    <p><a href="MiddleEast.html"</a>Middle East</p>
+		      <p><a href="East-Asia.html"</a>East Asia</p>
+		      <p><a href="Southeast-Asia.html">Southeast Asia</a></p>
+		      <p><a href="FestivalsHP.html">Homepage</a></p>
+		    </div>
+		  </div>
+		  <!--<section>
+		  <div class="header" id="myHeader">
+		      <h2>Middle East</h2>
+		    </div>
+
+		  </section>-->
+		<br><br><br><br><br>
+		<section class="KBmap" id="KBtestmap">
+
+		</section>
+		<section>
+		  <br><br><br><br>
+		  <!--Pakistan-->
+		  <h1 id="Eid">Eid celebrations</h1>
+		  <p>23 to 24 May (dates may vary)</p>
+		  <img class="a" src="images/eid.jpg" alt="Eid-Pakistan" >
+		  <div class="box">
+		    <p>The two Eids, Eid al-Fitr and Eid al-Adha, commemorate the passing of Ramadan,
+		      and the willingness of Abraham to sacrifice his son Ishmael for God. There are national holidays and many festival events that take place to celebrate Eid.
+		</p>
+		</div>
+		<h1 id="KiteFestival">Bassant Kite Festival</h1>
+		<p>Mid February</p>
+		<img class="a" src="images/Pak-fest.jpg" alt="Kite Festival-Pakistan" >
+		<div class="box">
+		<p>This is the spring festival in Lahore. People traditionally fly kites on the roofs of their buildings.
+		  In 2007, the festival was banned, primarily due to an increasing number of deaths and serious injuries.
+		  </p>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<h1 id="Holi">Holi</h1>
+		<p>21 March</p>
+		<img class="a" src="images/holi1.jpg" alt="Holi-India" >
+		<div class="box">
+		<p>Also called the festival of colors.
+		  On the day of Holi, people gather in open areas and apply dry and wet colors of multiple hues to each other, with some carrying water guns and colored water-filled balloons.</p>
+		</div>
+		<h1 id="Diwali">Diwali</h1>
+		<p>27 October</p>
+		<img class="a" src="images/diwali.jpg" alt="Diwali-India" >
+		<div class="box">
+		<p>During this festival of lights, houses are decorated with clay lamps, candles, and Ashok leaves. People wear new clothes, participate in family prayers,
+		  burst crackers, and share sweets with friends, families, and neighbors.
+		</p>
+		</div>
+		<!--Bangladesh-->
+		<h1 id="Pawhela">Pawhela Boishakh- New Year</h1>
+		<p>14 April</p>
+		<img class="a" src="images/bangladesh-new-year.jpg" alt="New Year-Bangladesh" >
+		<div class="box">
+		<p>In Bangladesh, ‘Pohela’ means first and ‘Boishakh’ is the first Bengali month. Pohela Boishakh is the day on which Bengali New Year is welcomed with a new day of new beginnings, hopes, and happiness.
+		</p>
+		</div>
+		<h1 id="Budda">Buddha Purnima</h1>
+		<p>8 April</p>
+		<img class="a" src="images/buddha-purnima.jpg" alt="Buddha Purnima-Bangladesh" >
+		<div class="box">
+		<p>Across Bangladesh, Buddha Purnima is the largest Buddhist festival celebrating the birth of Buddha.
+		Buddha devotees celebrate the festival based on three most important events in the life of Lord Buddha- his arrival, enlightenment and ‘nirvana.’
+		</p>
+		</div>
+		<!--Sri Lanka-->
+		<h1 id="Sinhala">Sinhala & Tamil New Year</h1>
+		<p>13 to 14 April</p>
+		<img class="a" src="images/tamil-sl-new-year.jpg" alt="New Year-Sri Lanka" >
+		<div class="box">
+		<p>Sinhala & Tamil New Year is especially celebrated to mark the end of the harvest season and spring. People get busy cleaning and decorating their homes, preparing
+		  traditional sweets, enjoying meals with the family and showing off their new clothes.
+		</p>
+		</div>
+		<br /><br />
+		</section>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+<div class="footer">
+  <p>Copyright blah blah</p>
+</div>
+
+
+	</body>
+
+	<script>
+
+		var json =
+		{
+			"mapMarker1": {
+				"cordX": "32.14",
+				"cordY": "40.35",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Eid Celebrations",
+					"content": "<a href='#Eid'>Learn more</a>"
+				}
+			},
+			"mapMarker2": {
+				"cordX": "37.09",
+				"cordY": "32.21",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Bassant Kite Festival",
+					"content": "<a href='#KiteFestival'>Learn more</a>"
+				}
+			},
+
+			"mapMarker4": {
+				"cordX": "38.36",
+				"cordY": "40.88",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Holi",
+					"content": "<a href='#Holi'>Learn more</a>"
+				}
+			},
+			"mapMarker5": {
+				"cordX": "45.21",
+				"cordY": "49.73",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Diwali",
+					"content": "<a href='#Diwali'>Learn more</a>"
+				}
+			},
+			"mapMarker6": {
+				"cordX": "52.48",
+				"cordY": "43.72",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Pawhela Boishakh",
+					"content": "<a href='#Pawhela'>Learn more</a>"
+				}
+			},
+
+			"mapMarker7": {
+				"cordX": "53.85",
+				"cordY": "45.84",
+				"icon": "map-marker.svg",
+				"modal": {
+					"title": "Buddha Purnima",
+					"content": "<a href='#Buddha'>Learn more</a>"
+				}
+			},
+			"mapMarker8": {
+				"cordX": "46.79",
+				"cordY": "69.56",
+				"icon": "map-marker.svg",
+				"modal": {
+				"title": "Sinhala & Tamil New Year",
+				"content": "<a href='#Sinhala'>Learn more</a>"
+				}
+			}
+
+			};
+
+		(function($) {
+
+			$(document).ready(function(){
+
+				createKBmap('KBtestmap', 'Map_Of_Asia_Cropped.jpg');
+
+				KBtestmap.importJSON(json);
+
+				KBtestmap.showAllMapMarkers();
+
+			});
+
+		})(jQuery);
+
+	</script>
+
+</html>

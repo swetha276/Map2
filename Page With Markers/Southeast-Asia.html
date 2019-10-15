@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script type="text/javascript" src="js/KBmapmarkers.js"></script>
+  <script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+
+  <link href="css/KBmapmarkers.css" rel="stylesheet">
+  <link href="css/FestivalsCSS.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Domine:400,700&display=swap" rel="stylesheet">
+
+  <style>
+
+    @font-face {
+      font-family: 'witcher';
+      src: url('thewitcher-4.ttf')  format('truetype')
+    }
+
+    .KBmap__markerTitle{
+      font-family: witcher;
+      color: #56270c;
+    }
+    </style>
+<title>Southeast Asian Festivals</title>
+
+</head>
+<body>
+    <div class="dropdown">
+  <header class="fixed">Southeast Asia</header>
+  <div class="dropdown-content">
+  <p><a href="MiddleEast.html"</a>Middle East</p>
+    <p><a href="East-Asia.html"</a>East Asia</p>
+    <p><a href="South-Asia.html">South Asia</a></p>
+    <p><a href="FestivalsHP.html">Homepage</a></p>
+  </div>
+</div>
+  <!--<section>
+  <div class="header" id="myHeader">
+      <h2>Middle East</h2>
+    </div>
+
+  </section>-->
+<br><br><br><br><br>
+<section class="KBmap" id="KBtestmap">
+
+</section>
+<section>
+  <br><br><br><br>
+<!--Vietnam-->
+<h1 id ="Tet">Tet (New Year)</h1>
+  <p>January 25</p>
+  <img class="a" src="images/Tet.jpg" alt="Tet-Vietnam" />
+  <div class="box">
+    <p>Tet (New Year) is the largest, most celebrated festival in Vietnam. Like many of Vietnam’s festivals, Tet honors ancestors, so many return home to celebrate with their families.
+	During the day it’s common to see gentle rituals such as the handing out of flowers and lighting candles at the temple. But in the evening celebrations become livelier with fireworks,
+	colorful performances and lots of street food stalls.
+</p>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<h1 id="WanderingSouls">Wandering Souls Day (Trung Nguyen)</h1>
+	<p>15th day of the 7th lunar month</p>
+  <img class="a" src="images/Wandering Souls Day.jpg" alt="Wandering Souls Day-Vietnam" />
+  <div class="box">
+	<p>The story behind Wandering Souls Day, the second largest festival in Vietnam after Tet, is one of the most interesting of Vietnam’s festivals. This Buddhist celebration is built on the belief that
+	a person’s soul is sent to heaven or hell when they die. On Wandering Souls Day, those sinful souls who find themselves in the latter may return to their mortal homes for absolution. The day
+	before the celebration, families travel to the temples to make offerings of flowers and food for those souls without relatives, and alters are set up in each home with food offerings to guide
+	ancestral spirits home.
+</p>
+</div>
+<!--Philippines-->
+<h1 id="Dinagyang">Dinagyang Festival</h1>
+    <p>Fourth weekend of January</p>
+    <img class="a" src="images/Dinagyang Festival.jpg" alt="Dinagyang Festival-Philippines" />
+    <div class="box">
+      <p>Dinagyang Festival is one of the largest festivals in the Philippines. It’s when Iloilo takes the street festivals to the next level. The city converts all its streets into a massive open-air
+	  festival and everyone is invited. Mouthwatering local dishes are overflowing whilst there are bands playing in every alley you turn to. Every barangay and school will come together and have
+	  an extravagant dance competition.
+</p>
+</div>
+<h1 id="Panagbenga">Panagbenga Festival</h1>
+<p>Throughout February</p>
+<img class="a" src="images/Panagbenga Festival.png" alt="Panagbenga Festival-Philippines" />
+<div class="box">
+<p>February highlights the season of blooming flowers and is also to commemorate The Philippines rise from the disastrous 1990 earthquake in Luzon. Marvelous floats, designed with various types
+of flowers, conquer the streets of Baguio City. Tourists can expect street dancing by dancers wearing flower-inspired costumes.</p>
+</div>
+<!--Thailand-->
+
+<h1 id="PhiTaKhon">Phi Ta Khon (Ghost Festival)</h1>
+<p>The weekend of the lunar calendar’s 6th full moon</p>
+<img class="a" src="images/Phi Ta Khon Festival.jpg" alt="Phi Ta Khon Festival-Thailand" />
+<div class="box">
+<p>Also known as the Ghost Festival, this is one of the most interesting Thailand traditional festivals. Phi Ta Khon is a festival that combines religious traditions, a fun-loving party atmosphere,
+and local handicrafts. It is celebrated for three days with thousands of locals wearing colorful, ghastly masks with stretched faces and phallic noses, painted in bright, and gaudy colors.
+</p>
+</div>
+
+<h1 id="Songkran">Songkran Festival (Water Festival)</h1>
+<p>April 13th to 15th</p>
+<img class="a" src="images/Songkran.jpg" alt="Songkran Festival-Thailand" />
+<div class="box">
+<p>The Water Festival in Thailand is perhaps one of the most fun festivals in the country, and possibly in the world! This long and large festival involves a 3-day water fight in which people participate across
+the country. With drinking, music, dancing, and people drenched from head to toe, people use buckets, hose pipes, water guns, and anything else that they can get their hands on to use to splash water on others.
+</p>
+</div>
+<br /><br />
+</section>
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+<div class="footer">
+	<p>Copyright blah blah</p>
+</div>
+</body>
+<script>
+
+  var json =
+  {
+    "mapMarker1": {
+      "cordX": "65.23",
+      "cordY": "47.96",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Tet-New Year",
+        "content": "<a href='#Tet'>Learn more</a>"
+      }
+    },
+    "mapMarker2": {
+      "cordX": "68.70",
+      "cordY": "59.82",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Wandering Souls Day",
+        "content": "<a href='#WanderingSouls'>Learn more</a>"
+      }
+    },
+    "mapMarker3": {
+      "cordX": "78.93",
+      "cordY": "55.93",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Dinagyang Festival",
+        "content": "<a href='#Dinagyang'>Learn more</a>"
+      }
+    },
+    "mapMarker4": {
+      "cordX": "83.03",
+      "cordY": "69.20",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Panagbenga Festival",
+        "content": "<a href='#Panagbenga'>Learn more</a>"
+      }
+    },
+    "mapMarker5": {
+      "cordX": "61.22",
+      "cordY": "53.63",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Phi Ta Khon ",
+        "content": "<a href='#PhiTaKhon'>Learn more</a>"
+      }
+    },
+    "mapMarker6": {
+      "cordX": "63.12",
+      "cordY": "59.29",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Songkran Festival",
+        "content": "<a href='#Songkran'>Learn more</a>"
+      }
+    }
+
+    };
+
+  (function($) {
+
+    $(document).ready(function(){
+
+      createKBmap('KBtestmap', 'Map_Of_Asia_Cropped.jpg');
+
+      KBtestmap.importJSON(json);
+
+      KBtestmap.showAllMapMarkers();
+
+    });
+
+  })(jQuery);
+
+</script>
+</html>

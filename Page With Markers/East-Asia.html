@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <script type="text/javascript" src="js/KBmapmarkers.js"></script>
+  <script type="text/javascript" src="js/KBmapmarkersCords.js"></script>
+
+  <link href="css/KBmapmarkers.css" rel="stylesheet">
+  <link href="css/FestivalsCSS.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Domine:400,700&display=swap" rel="stylesheet">
+
+  <style>
+
+    @font-face {
+      font-family: 'witcher';
+      src: url('thewitcher-4.ttf')  format('truetype')
+    }
+
+    .KBmap__markerTitle{
+      font-family: witcher;
+      color: #56270c;
+    }
+    </style>
+<title>East Asian Festivals</title>
+
+</head>
+<body>
+    <div class="dropdown">
+  <header class="fixed">East Asia</header>
+  <div class="dropdown-content">
+  <p><a href="MiddleEast.html"</a>Middle East</p>
+    <p><a href="Southeast-Asia.html"</a>Southeast Asia</p>
+    <p><a href="South-Asia.html">South Asia</a></p>
+    <p><a href="FestivalsHP.html">Homepage</a></p>
+  </div>
+</div>
+  <!--<section>
+  <div class="header" id="myHeader">
+      <h2>Middle East</h2>
+    </div>
+
+  </section>-->
+<br><br><br><br><br>
+<section class="KBmap" id="KBtestmap">
+
+</section>
+<section>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<br><br><br><br>
+  <!--China-->
+  <h1 id="ChineseNewYear">Chinese New Year</h1>
+
+  <p> February 4 to February 10</p>
+  <img class="a" src="images/Chinese New Year.jpg" alt="Chinese New Year-China" />
+<div class="box">
+    <p>Chinese New Year (within 15 days of February 5) is also called Spring Festival. It is the most important festival to Chinese people. Many activities are held to celebrate the festival,
+	such as dragon dances, setting off firecrackers, making dumplings, etc.
+</p>
+</div>
+
+<h1 id="LanternFestival">Lantern Festival</h1>
+<p>February 19</p>
+<img class="a" src="images/Lantern Festival.jpg" alt="Lantern Festival-China" />
+<div class="box">
+<p>The Lantern Festival is traditionally the last day of the Chinese New Year period. It became a festival about 2,000 years ago. Billions of lanterns and giant lantern and drone displays makes the time festive.
+  </p>
+</div>
+
+<!--Japan-->
+<h1 id="GionMatsuri">Gion Matsuri</h1>
+    <p>July</p>
+    <img class="a" src="images/Gion Matsuri.jpg" alt="Gion Matsuri-Japan" />
+    <div class="box">
+      <p>The Gion Matsuri has been held every year since 869 and is the country's biggest festival. The festival turns the city into a huge party, especially during the two periods in mid-July when elaborately-decorated
+	  multi-ton floats are displayed and then pulled through the streets.
+</p>
+</div>
+
+<h1 id="AwaOdori">Awa Odori </h1>
+<p>August 12-15</p>
+<img class="a" src="images/Awa Odori.jpg" alt="Awa Odori-Japan" />
+<div class="box">
+<p>This is the largest traditional dance festival in Japan. Men, women and children dance on almost all of the streets in Tokushima City, from the 12th to the 15th of August.  They wear summer cotton kimono and straw hats.
+ More than a million people get together for this festival, and it is a spectacular sight. You can even join them to dance with the rhythmic music!</p>
+</div>
+<!--South Korea-->
+
+<h1 id="IceFestival">Hwacheon Sancheoneo Ice Festival</h1>
+<p>January</p>
+<img class="a" src="images/Hwacheon Sancheoneo Ice Festival.jpg" alt="Hwacheon Sancheoneo Ice Festival-South Korea" />
+<div class="box">
+<p>Every year, hundreds of thousands of visitors brave the sub-zero temperatures to participate in trout ice fishing in the Hwacheon Sancheoneo Ice Festival. Held on a frozen river in Gangwon Province, festival goers drop
+their fishing lines into the ice drilled with holes, and wait patiently for their catch. As a way to celebrate their catch, participants bite into the head of the trout! Visitors who are brave can also try catching the
+fish with their bare hands.
+</div>
+</p>
+
+<h1 id="MudFestival">Boryeong Mud Festival</h1>
+<p>July 12-21</p>
+<img class="a" src="images/Boryeong Mud Festival.jpg" alt="Boryeong Mud Festival-South Korea" />
+<div class="box">
+<p>Held at Daecheon Beach annually, close to half a million visitors flock to the annual Boryeong Mud Festival to dance, wrestle, slide and roll around in mud. Started in the 90's as a way to promote the health benefits
+ of mineral-rich mud, the interest for the festival was different from what it is today. It now includes other activities like mud wrestling, “mud king” contest, fireworks, and mega slides greased with mud. After the sun
+ sets, the fun continues with a concert by the hottest KPop artists!
+</p>
+</div>
+<br /><br />
+</section>
+
+
+
+
+
+
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 100px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+<div class="footer">
+	<p>Copyright blah blah</p>
+</div>
+</body>
+<script>
+
+  var json =
+  {
+    "mapMarker1": {
+      "cordX": "65.65",
+      "cordY": "26.55",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Chinese New Year)",
+        "content": "<a href='#ChineseNewYear'>Learn more</a>"
+      }
+    },
+    "mapMarker2": {
+      "cordX": "70.39",
+      "cordY": "38.94",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Lantern Festival",
+        "content": "<a href='#LanternFestival'>Learn more</a>"
+      }
+    },
+    "mapMarker3": {
+      "cordX": "87.99",
+      "cordY": "21.59",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Gion Matsuri",
+        "content": "<a href='#GionMatsuri'>Learn more</a>"
+      }
+    },
+    "mapMarker4": {
+      "cordX": "85.77",
+      "cordY": "28.32",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Awa Odori",
+        "content": "<a href='#AwaOdori'>Learn more</a>"
+      }
+    },
+    "mapMarker5": {
+      "cordX": "78.93",
+      "cordY": "24.42",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Hwacheon Sancheoneo Ice Festival",
+        "content": "<a href='#IceFestival'>Learn more</a>"
+      }
+    },
+    "mapMarker6": {
+      "cordX": "79.66",
+      "cordY": "27.61",
+      "icon": "map-marker.svg",
+      "modal": {
+        "title": "Boryeong Mud Festival",
+        "content": "<a href='#MudFestival'>Learn more</a>"
+      }
+    }
+
+    };
+
+  (function($) {
+
+    $(document).ready(function(){
+
+      createKBmap('KBtestmap', 'Map_Of_Asia_Cropped.jpg');
+
+      KBtestmap.importJSON(json);
+
+      KBtestmap.showAllMapMarkers();
+
+    });
+
+  })(jQuery);
+
+</script>
+</html>
